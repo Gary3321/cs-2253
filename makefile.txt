@@ -1,0 +1,6 @@
+main: main.o deal_with_string.o
+	gcc -o main main.o deal_with_string.o
+main.o: main.c deal_with_string.c
+	gcc -c main.c
+deal_with_string.o deal_with_string.c deal_with_string.h
+	gcc -c deal_with_string.c
